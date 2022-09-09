@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *Starting point of the fonction main
+ *Starting point of the function main
  *
  *The function main returns 0 to end the program after printing our message
  */
