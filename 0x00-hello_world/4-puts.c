@@ -2,7 +2,7 @@
 /**
  *main - Starting point of our program
  *
- *Return 0 - The function main ends the program after printing our message
+ *Return : 0 The function main ends the program after printing our message
  */
 int main(void)
 {
