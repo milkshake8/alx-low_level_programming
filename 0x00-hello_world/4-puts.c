@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *Starting point of the function main
+ *main - Starting point of our program
  *
- *The function main returns 0 to end the program after printing our message
+ *return 0 The function main returns 0 to end the program after printing our message
  */
 int main(void)
 {
