@@ -15,7 +15,7 @@ int main(void)
 	{
 		int j;
 
-		for (j = 0; j < 10 ; j++)
+		for (j = 0; j < 9 ; j++)
 		{
 			int k;
 
@@ -30,7 +30,7 @@ int main(void)
 					putchar(' ');
 					putchar(k + '0');
 					putchar(l + '0');
-					if (n != 9 || j != 9 || k != 8 || l != 9)
+					if (n != 9 || j != 8 || k != 9 || l != 9)
 					{
 						putchar(',');
 						putchar(' ');
