@@ -11,33 +11,26 @@ int main(void)
 {
 	int n;
 
-	for (n = 0; n < 10; ++n)
+	for (n = 0; n < 100; n++)
 	{
 		int j;
 
-		for (j = 0; j < 9 ; j++)
-		{
-			int k;
-
-			for (k = 0; k < 10; k++)
+			for (j = 0; j < 100 ; j++)
 			{
-				int l;
-
-				for (l = 1; l < 10; l++)
+				if (n < j)
 				{
-					putchar(n + '0');
-					putchar(j + '0');
+					putchar((n / 10) + '0');
+					putchar((n % 10) + '0');
 					putchar(' ');
-					putchar(k + '0');
-					putchar(l + '0');
-					if (n != 9 || j != 8 || k != 9 || l != 9)
+					putchar((j / 10) + '0');
+					putchar((j % 10) + '0');
+					if (n != 98 || j != 99)
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
 			}
-		}
 	}
 	putchar('\n');
 	return (0);
