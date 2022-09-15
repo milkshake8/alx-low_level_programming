@@ -3,13 +3,13 @@
 #include <stdio.h>
 
 /**
- * _islower - checks for lowercase character
+ * test_islower - checks for lowercase character
  * @c: the tested parameter
  *
  * Description: a function that checks for lowercase character
  * Return: 1 (success) or 0 otherwise
  */
-int _islower(int c)
+int test_islower(int c)
 {
 	int ret;
 
