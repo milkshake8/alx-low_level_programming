@@ -8,7 +8,7 @@
  * in lowercase 10 times, followed by a new line.
  * Return: Notthing is returned(void)
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	int j = 0;
 
