@@ -6,7 +6,8 @@
  */
 void _puts(char *str)
 {
-	int i;
+	long int i;
+
 
 	for (i = 0; i < strlen(str); i++)
 		_putchar(str[i]);
