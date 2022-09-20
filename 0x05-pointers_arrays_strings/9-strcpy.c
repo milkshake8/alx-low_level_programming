@@ -20,6 +20,6 @@ char *_strcpy(char *dest, char *src)
 		dest++;
 		src++;
 	}
-	*destination = '\0';
-	return ptr;
+	*dest = '\0';
+	return pt;
 }
