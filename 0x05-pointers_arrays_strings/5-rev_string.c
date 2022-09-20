@@ -11,5 +11,5 @@ void rev_string(char *s)
 	int size = strlen(s);
 
 	for (i =0; i < size; i++)
-		str[i] = str[(size - 1) - i];
+		s[i] = s[(size - 1) - i];
 }
