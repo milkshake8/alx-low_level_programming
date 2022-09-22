@@ -5,6 +5,8 @@
  * @dest: point to the destination
  * @src: point to the source
  *
+ * Description: Concatenates two strings and return the
+ * value of the concatenate string.
  * Return: The vallue of the concatenate string.
  */
 char *_strcat(char *dest, char *src)
