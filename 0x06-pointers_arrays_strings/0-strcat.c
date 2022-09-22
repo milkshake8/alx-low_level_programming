@@ -13,7 +13,7 @@ char *_strcat(char *dest, char *src)
 {
 	char *pt = dest;
 
-	while (*dest >= 0 && *dest <= 255)
+	while (*dest >= 0)
 	{
 		if (*dest == '\0')
 		{
