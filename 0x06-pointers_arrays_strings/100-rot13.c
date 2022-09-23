@@ -7,7 +7,7 @@
  */
 char *rot13(char *str)
 {
-	int count1 = 0, count2 = 0;
+	int count = 0, count2 = 0;
 	char letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char replace[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
