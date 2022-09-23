@@ -20,6 +20,7 @@ char *rot13(char *str)
 			if (str[count] == letters[count2])
 			{
 				str[count] = replace[count2];
+				break;
 			}
 			count2++;
 		}
