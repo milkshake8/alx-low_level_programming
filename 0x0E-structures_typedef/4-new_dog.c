@@ -2,12 +2,11 @@
 #include <stdlib.h>
 
 /**
- * new_dog - function that creates a new dog.
- * @name: point to the name of the dog.
- * @age: point to the age of the dog.
- * @owner: point to the name of its owner.
- *
- * Return: a pointer to the new dog or NULL.
+ * new_dog - creates a new struct of type dog
+ * @name: struct parameter name
+ * @age: struct parameter age
+ * @owner: struct parameter owner
+ * Return: returns pointer to buffer of datatype dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
