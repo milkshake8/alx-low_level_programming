@@ -1,1 +1,1 @@
-This repositiry is for some low programming exercises
+This repository is for some low programming exercise.
