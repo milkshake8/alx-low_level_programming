@@ -3,20 +3,20 @@
 #include <stdio.h>
 
 /**
- * real_mem - reallocates memory for an array of pointers
+ * real - reallocates memory for an array of pointers
  * to the nodes in a linked list
  * @list: the old list to append
- * @size: size of the new list
+ * @si: size of the new list
  * @new: new node to add to the list
  *
  * Return: pointer to the new list
  */
-const listint_t **real_mem(const listint_t **list, size_t size, const listint_t *new)
+const listint_t **real(const listint_t **list, size_t si, const listint_t *new)
 {
 	const listint_t **newlist;
 	size_t i;
 
-	newlist = malloc(size * sizeof(listint_t *));
+	newlist = malloc(si * sizeof(listint_t *));
 	if (newlist == NULL)
 	{
 		free(list);
@@ -52,7 +52,7 @@ size_t print_listint_safe(const listint_t *head)
 			}
 		}
 		num++;
-		list = real_mem(list, num, head);
+		list = real(list, num, head);
 		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
 	}
