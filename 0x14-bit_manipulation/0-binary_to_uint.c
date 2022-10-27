@@ -1,6 +1,20 @@
 #include "main.h"
-#include <math.h>
-#include <stddef.h>
+
+/**
+ * _pow - function that elevate a power of a number
+ * @x: the number to compute the power
+ * @y: the maximum power
+ *
+ * Return: the power of yhe number.
+ */
+unsigned int _pow(unsigned int x, unsigned int y)
+{
+	unsigned int mul = 1;
+
+	for (; y > 0; y--)
+		mul *= x;
+	return (mul);
+}
 
 /**
  * binary_to_uint - function that converts a binary number to an unsigned int.
@@ -24,7 +38,7 @@ unsigned int binary_to_uint(const char *b)
 	i = 0;
 	while (b[i] != '\0')
 	{
-		numb += (b[i] - 48) * pow(2, (size - i - 1));
+		numb += (b[i] - 48) * _pow(2, (size - i - 1));
 		i++;
 	}
 	return (numb);
